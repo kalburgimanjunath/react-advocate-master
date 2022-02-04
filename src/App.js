@@ -30,6 +30,7 @@ export default function App() {
 
   return (
     <div>
+      <i class="bi-alarm"></i>
       <Menu />
       <i class="fas fa-user"></i>
       {data ? (
