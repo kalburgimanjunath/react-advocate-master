@@ -8,11 +8,25 @@ export default class RichEditor extends React.Component {
     super(props);
     this.state = { editorState: EditorState.createEmpty() };
     this.onChange = (editorState) => this.setState({ editorState });
+    this.styleMap = {
+      STRIKETHROUGH: {
+        textDecoration: 'line-through',
+      },
+    };
   }
-
   render() {
     return (
-      <Editor editorState={this.state.editorState} onChange={this.onChange} />
+      <>
+        <Editor
+          editorState={this.state.editorState}
+          onChange={this.onChange}
+          customStyleMap={this.styleMap}
+        />
+        <footer>
+          <button className="btn btn-primary">Save</button>
+          <button className="btn btn-secondary">Cancel</button>
+        </footer>
+      </>
     );
   }
 }

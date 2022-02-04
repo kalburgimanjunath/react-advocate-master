@@ -1,5 +1,6 @@
 import React from 'react';
 import RichEditor from '../components/RichEditor';
+import { Sidebar } from '../components/index';
 export default function Case() {
   return (
     <div className="row">
@@ -9,6 +10,7 @@ export default function Case() {
         <h5>Section 125</h5>
         <div className="row">
           <a href="">New</a>
+          <Sidebar />
         </div>
       </div>
       <div className="col-8">

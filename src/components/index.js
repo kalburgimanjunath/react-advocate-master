@@ -6,7 +6,7 @@ import { CaseList } from './CaseList';
 import Menu from './Menu';
 import Calender from './Calender';
 import RichEditor from './RichEditor';
-
+import Sidebar from './Sidebar';
 export {
   AdvocateList,
   CourtList,
@@ -15,4 +15,5 @@ export {
   Menu,
   Calender,
   RichEditor,
+  Sidebar,
 };

@@ -25,7 +25,10 @@ export default function App() {
       const caselist = await axios.get(
         'https://api.airtable.com/v0/app5F4nbMoQ4mxv4N/Case List?api_key=keyeNXyxxuuYJY19w'
       );
-      setData({ advocates, courts, caselist });
+      const documents = await axios.get(
+        'https://api.airtable.com/v0/app5F4nbMoQ4mxv4N/Documents?api_key=keyeNXyxxuuYJY19w'
+      );
+      setData({ advocates, courts, caselist, documents });
     })();
   }, []);
   console.log(data);
