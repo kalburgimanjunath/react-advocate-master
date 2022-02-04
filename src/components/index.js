@@ -1,6 +1,6 @@
-import * from './Admin'
-import * from './Advocate'
-import * from './Client'
-import * from './Court'
+// import * from './Admin'
+import { AdvocateList } from './Advocate';
+import { CourtList } from './Court';
+import { ClientList } from './Client';
 
-export {AdvocateList};
+export { AdvocateList, CourtList, ClientList };

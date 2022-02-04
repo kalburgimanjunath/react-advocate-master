@@ -1,4 +1,4 @@
 import React from 'react';
-export default function CloutList() {
-  return <div>CloutList</div>;
+export default function CourtList() {
+  return <div>CourtList</div>;
 }
