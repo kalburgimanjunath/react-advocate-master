@@ -15,7 +15,7 @@ export default function AdvocateList({ advocates }) {
                   border: '1px Solid #202020',
                 }}
               >
-                {item.fields.FirstName}
+                <i class="fas fa-user"></i> {item.fields.FirstName}
               </div>
             );
           })}

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 export default function CaseList({ caselist }) {
   // console.log(courts);
   return (
@@ -15,7 +16,10 @@ export default function CaseList({ caselist }) {
                   border: '1px Solid #202020',
                 }}
               >
-                {item.fields['CRN Number']}
+                <Link to={`./case/`}>
+                  <i className="fas fa-font-case"></i>{' '}
+                  {item.fields['CRN Number']}
+                </Link>
               </div>
             );
           })}

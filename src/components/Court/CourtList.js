@@ -15,7 +15,7 @@ export default function CourtList({ courts }) {
                   border: '1px Solid #202020',
                 }}
               >
-                {item.fields.Name}
+                <i class="fas fa-flag-alt"></i> {item.fields.Name}
               </div>
             );
           })}
