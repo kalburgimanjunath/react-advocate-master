@@ -1,12 +1,12 @@
 import React from 'react';
-export default function AdvocateList({ advocates }) {
-  // console.log(advocates);
+export default function CaseList({ caselist }) {
+  // console.log(courts);
   return (
     <div>
       <div>
-        <h1>Advocates</h1>
-        {advocates &&
-          advocates.map((item) => {
+        <h1>Case List</h1>
+        {caselist &&
+          caselist.map((item) => {
             return (
               <div
                 style={{
@@ -15,7 +15,7 @@ export default function AdvocateList({ advocates }) {
                   border: '1px Solid #202020',
                 }}
               >
-                {item.fields.FirstName}
+                {item.fields['CRN Number']}
               </div>
             );
           })}
